@@ -38,13 +38,13 @@ var HighScore = localStorage.getItem("Score");
 var Timer = document.querySelector("#Timer");
 
 Timer.addEventListener("click", setTime);
+Timer.addEventListener("click", displayQuiz);
 
 // Please make the button referenced in index.html set the timer and start the quiz.
-// You can use the code from the stopwatch activity as a starting point.
 // You will need to create a function to display the questions and answers.
 // You will need to create a function to check the answers.
 // You will need to create a function to display the final score.
-let quiz = [   {    question: "Which of the following is a coorect way to declare a variable in javascript?",    options: ["var", "let", "const", "all of the above"],
+let quiz = [   {    question: "Which of the following is a correct way to declare a variable in javascript?",    options: ["var", "let", "const", "all of the above"],
     answer: "all of the above"
   },
   {
@@ -78,13 +78,31 @@ function displayQuiz() {
       let question = quiz[i].question;
       let options = quiz[i].options;
       let answer = quiz[i].answer;
-      console.log(question);
+      
+
+      // Create a new div element to hold the question
+      let questionEl = document.createElement("div");
+      questionEl.textContent = question;
+      mainEl.appendChild(questionEl);
+
+      // Create a new ul element to hold the options
+      let optionsEl = document.createElement("ul");
+      mainEl.appendChild(optionsEl);
+
+      let answerEl = document.createElement("div");
+answerEl.textContent = answer;
+mainEl.appendChild(answerEl);
+
+      // Iterate through the options and create li elements for each one
       for (let j = 0; j < options.length; j++) {
-          console.log(`${j+1}. ${options[j]}`);
+          let optionEl = document.createElement("li");
+          optionEl.textContent = options[j];
+          optionsEl.appendChild(optionEl);
       }
-      console.log(`Answer: ${answer}\n`);
   }
 }
+
+
 
 
  // This function will check the answers.
@@ -117,8 +135,8 @@ localStorage.setItem('userScore', JSON.stringify(userScore));
 
 var Timer = document.querySelector("#Timer");
 
-Timer.addEventListener("click", setTime);
-Timer.addEventListener("click", displayQuiz);
+
+
 
 // Please make the button referenced in index.html set the timer and start the quiz.
 // You can use the code from the stopwatch activity as a starting point.
