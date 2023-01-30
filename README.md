@@ -12,7 +12,7 @@ https://freewill201.github.io/Quiz/
 
 - ![ Picture Of Questions Of Webpage]( images/Screenshot%202023-01-30%20at%2012.38.18%20AM.png "Questions Of Webpage")
 
-- ![ Picture Of More Questions Of Webpage]( images/Screenshot%202023-01-30%20at%2012.38.22%20AM.png "More Questions Of Webpage")
+- ![ Picture Of More Questions Of Webpage]( images/Screenshot%202023-01-30%20at%2012.50.21%20AM.png "More Questions Of Webpage")
 
 # Description
 
