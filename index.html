@@ -9,10 +9,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Please use text wrap to easily read my comments.-->
+    <!-- The below code, lines 13-19 create a button that intiates the quiz and a countdown. It allows for a descriptive header that guides the user on how to properly use the webpage.-->
     <button id="Timer">Start Quiz</button>
     <h1 class="time" style="text-align:center;"></h1>
     <div id="main">
+        <h6>Please answer questions as they appear and
+            check them by hitting submit answers which will
+            display the answers in order of appearence.
+        </h6>
     <h3><span id="Score">High Score</span></h3>
+    <!-- The below form establsihes different options with numeric values attatched and corresponding ID's to be referenced in other files.-->
     <form>
         <ul>
             <li>
@@ -27,6 +34,8 @@
                 </select>
             </li>
 </ul>
+<!-- The two buttons below allow for furhter functionality by allowing the user to check their answers and, in an ideal world, save their scores.-->
+<button id="submit">Submit Answers</button>
 <button id="save">Save Score</button>
     </form>
     </div>

@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/* The code below, lines 6-11, give the page style through a background color, text color, and font size and family. */
 body {
     font-size: 30px;
     font-family: "Roboto", sans-serif;
@@ -9,17 +10,20 @@ body {
     color: white;
 }
 
+/* Lines 14-17 center text used in the index html as referenced */
 h1,
 h3 {
     text-align: center;
 }
 
+/* Lines 20-24 style the list items box to look more appealing */
 li {
     list-style: none;
     margin-top: 20px;
     display: box;
 }
 
+/* Lines 27-43 style the buttons to match up and be visually appealing */
 button {
     background-color: aqua;
     border-radius: 8px;
@@ -49,6 +53,7 @@ select {
     background-color: white;
 }
 
+/* Lines 57-73 style the main dive class, giving it proper formatting and content display features */
 .main {
     background-color: white;
     border: 1px solid white;
