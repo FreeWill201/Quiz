@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Timed Quiz</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Timed Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Please use text wrap to easily read my comments.-->
-    <!-- The below code, lines 13-19 create a button that intiates the quiz and a countdown. It allows for a descriptive header that guides the user on how to properly use the webpage.-->
-    <button id="Timer">Start Quiz</button>
-    <h1 class="time" style="text-align:center;"></h1>
+    <!-- The below code, lines 15-21 creates a button that intiates the quiz and a countdown. It allows for a descriptive header that guides the user on how to properly use the webpage.-->
     <div id="main">
-        <h6>Please answer questions as they appear and
-            check them by hitting submit answers which will
-            display the answers in order of appearence.
+      <div id="start-container">
+        <button id="Timer">Start Quiz</button>
+        <h6>
+          Please answer questions as they appear. When correct answer is
+          selected new question will display. Five seconds will be deducted for
+          each incorrect answer. You will have 60 seconds to complete the quiz.
+          Good luck!
         </h6>
-    <h3><span id="Score">High Score</span></h3>
-    <!-- The below form establsihes different options with numeric values attatched and corresponding ID's to be referenced in other files.-->
-    <form>
+      </div>
+      <h3 class="time" style="text-align: center"></h3>
+    <!-- The below code allows a user to input their score-->
+      <select id="userScore">
+        <label for="userScores">User Score</label>
         <ul>
             <li>
-                <select id="userScore">
-                <label for="userScores">User Score</label>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                </select>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
             </li>
-</ul>
-<!-- The two buttons below allow for furhter functionality by allowing the user to check their answers and, in an ideal world, save their scores.-->
-<button id="submit">Submit Answers</button>
+        </select>
+    </ul>
+</div>
 <button id="save">Save Score</button>
-    </form>
-    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -45,7 +45,7 @@ button {
 label {
     color: orange;
 }
-
+/* The below code styles the score select bar */
 select {
     font-size: 30px;
     width: 100%;
@@ -71,6 +71,7 @@ select {
     display: block;
     clear: both;
 }
+
 
 
 
